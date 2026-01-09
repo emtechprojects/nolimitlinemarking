@@ -1,0 +1,113 @@
+@media screen and (max-width:751px) {
+    .about-details-card {
+        margin: 2rem 1rem 1rem;
+    }
+    .form-body-inner {
+        flex-direction: column;
+    }
+    .contact-inner {
+        flex-direction: column;
+    }
+    .footer-body {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .contact-methods {
+        width: 100%;
+    }
+    .contact {
+        width: 75%;
+    }
+    .enquiries {
+        width: 100%;
+    }
+    .form-gr-inner-after::after {
+        bottom: 42%;
+    }
+}
+@media screen and (max-width:500px) {
+    .nav-links {
+        font-size: 0.8rem;
+        margin-right: 0;
+        width: 60%;
+    }
+    .parallax p {
+        width: 90%;
+    }
+
+    .quote-form {
+        width: 90%;
+    }
+
+    .form-body-inner {
+        flex-direction: column;
+    }
+
+    .form-gr-inner {
+        width: 80%;
+    }
+    .form-btn {
+        font-size: 1rem;
+    }
+    .counter-input {
+        padding-left: 0 !important;
+    }
+
+    .contact-inner {
+        flex-direction: column;
+    }
+
+    .contact-methods {
+        width: 100%;
+        border: none;
+        border-top: 2px double rgb(97, 101, 116);
+        border-bottom: 2px double rgb(97, 101, 116);
+    }
+
+    .contact {
+        width: 75%;
+    }
+
+    .enquiries {
+        width: 100%;
+    }
+
+    .form-gr-inner-after::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        background-color: silver;
+    }
+    .form-gr-inner-after::after {
+        bottom: 40%;
+    }
+
+    .form-gr-inner {
+        width: 100%;
+    }
+
+    .form-gr-inner-after p {
+        min-height: 80px;
+    }
+    .footer-body {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .nav-links {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width:320px) {
+    .form-btn {
+        height: 100%;
+        font-size: 0.9rem;
+    }
+    .form-gr-inner-after::after {
+        bottom: 46%;
+    }
+}
