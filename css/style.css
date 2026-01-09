@@ -285,10 +285,10 @@ header {
     align-items: center;
     background-color: white;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
 .tikvid {
-    width: 50%;
+    width: 90%;
     max-width: 300px;
     border-radius: 10px;
 }
