@@ -27,7 +27,7 @@
 }
 @media screen and (max-width:500px) {
     .nav-links {
-        font-size: 0.9rem;
+        font-size: 1em;
         margin-right: 0;
         width: 60%;
     }
@@ -103,6 +103,9 @@
     }
 }
 @media screen and (max-width:320px) {
+    .nav-links {
+        font-size: 0.9em;
+    }
     .form-btn {
         height: 100%;
         font-size: 0.9rem;
