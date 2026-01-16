@@ -97,9 +97,12 @@
     }
 }
 
-@media screen and (max-width:410px) {
+@media screen and (max-width:412px) {
     .nav-links {
         font-size: 0.7rem;
+    }
+    .parallax-inner {
+       margin-top: 1em;
     }
 }
 @media screen and (max-width:320px) {
