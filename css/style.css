@@ -208,7 +208,7 @@ header {
     width: 100vw;
     height: 900px;
     position: fixed;
-    background-image: url('../images/Parra.png');
+    background-image: url('../images/pexel/webp/kindelmedia.webp');
     z-index: -1;
     /* background-position: calc(50.4cm/400);
     background-position: calc(255cm/400 / 100); */
@@ -280,6 +280,9 @@ header {
     font-weight: 750;
     color: rgb(41, 90, 136);
     letter-spacing: 1px
+}
+.card-body p {
+    font-size: large;
 }
 
 /* ABOUT */

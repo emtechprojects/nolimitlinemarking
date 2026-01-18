@@ -2,35 +2,48 @@
     .about-details-card {
         margin: 2rem 1rem 1rem;
     }
+
     .form-body-inner {
         flex-direction: column;
     }
+
     .contact-inner {
         flex-direction: column;
     }
+
     .footer-body {
         flex-direction: column;
         gap: 15px;
     }
+
     .contact-methods {
         width: 100%;
     }
+
     .contact {
         width: 75%;
     }
+
     .enquiries {
         width: 100%;
     }
+
     .form-gr-inner-after::after {
         bottom: 42%;
     }
 }
+
 @media screen and (max-width:500px) {
+    .parallax-inner {
+        margin-top: 1em;
+    }
+
     .nav-links {
         font-size: 1em;
         margin-right: 0;
         width: 60%;
     }
+
     .parallax p {
         width: 90%;
     }
@@ -46,9 +59,11 @@
     .form-gr-inner {
         width: 80%;
     }
+
     .form-btn {
         font-size: 1rem;
     }
+
     .counter-input {
         padding-left: 0 !important;
     }
@@ -80,6 +95,7 @@
         top: 0;
         background-color: silver;
     }
+
     .form-gr-inner-after::after {
         bottom: 40%;
     }
@@ -91,25 +107,35 @@
     .form-gr-inner-after p {
         min-height: 80px;
     }
+
     .footer-body {
         flex-direction: column;
         gap: 15px;
+    }
+    .services-content {
+        width: 90%;
+    }
+    .slider {
+        margin-left: -10px;
     }
 }
 
 @media screen and (max-width:412px) {
     .parallax-inner {
-       margin-top: 1em;
+        margin-top: 1em;
     }
 }
+
 @media screen and (max-width:320px) {
     .nav-links {
         font-size: 0.9em;
     }
+
     .form-btn {
         height: 100%;
         font-size: 0.9rem;
     }
+
     .form-gr-inner-after::after {
         bottom: 46%;
     }
