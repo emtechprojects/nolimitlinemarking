@@ -38,12 +38,13 @@ body {
     height: 140vh;
     position: absolute;
     top: 0;
-    display: flex;
+    /* display: flex; UNCOMMENT FOR ANIMATION */
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: white;
     z-index: 100;
-    animation: slide 3500ms 0s ease-in 1 forwards;
+    /* animation: slide 3500ms 0s ease-in 1 forwards;  UNCOMMENT FOR ANIMATION*/
 }
 @keyframes slide {
     90% {
@@ -62,12 +63,14 @@ body {
 }
 
 a {
-    color: white;
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+    /* text-decoration: dotted underline; */
 }
 
 header {
     width: 100%;
-    padding: 10px 5px;
+    padding: 5px;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -78,12 +81,12 @@ header {
 }
 
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 0px 0px 2px white; */
+    position: relative !important;
     border: 3px double white;
     border-radius: 50%;
 }
@@ -94,6 +97,7 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 .nav-link {
@@ -157,6 +161,7 @@ header {
     font-size: 30px;
     font-style: italic;
     text-align: center;
+    color: rgb(63, 63, 76);
 }
 
 .about-inner {}
@@ -240,7 +245,8 @@ header {
 .about-details-card {
     min-width: 300px;
     margin: 2rem 1.5rem 1rem;
-    padding: 15px 0 5px;
+    padding: 0 0 5px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,15 +258,27 @@ header {
     border-radius: 3px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 20%;
+}
 
+.contact-now {
+    font-size: 0.7em;
+    padding:1px 1em;
+    background:rgb(182, 182, 182);
+    color: white;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px black;
+    transition: background 600ms;
+}
+.contact-now:hover {
+    background: rgb(149, 149, 149);
 }
 
 .card-image {
     position: relative;
     /* z-index: -5; */
-    width: 200px !important;
+    width: 300px !important;
     height: 180px !important;
-    border-radius: 25px;
+    /* border-radius: 25px; */
     /* border-bottom: 3px double grey;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; */
@@ -268,18 +286,23 @@ header {
 }
 
 .card-body {
-    width: 230px;
+    width: 280px;
     margin: 10px 0 20px 0;
 }
 
 .card-body-title {
-    width: 98%;
+    width: 100%;
     margin: auto;
     padding: 10px 0;
-    font-size: 1.6em;
+    font-size: 1.7em !important;
     font-weight: 750;
-    color: rgb(41, 90, 136);
-    letter-spacing: 1px
+    /* color: rgb(41, 90, 136); */
+    color: white;
+    text-shadow: 0px 0px 1px black;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 32%;
+    left: 0;
 }
 .card-body p {
     font-size: large;
@@ -345,12 +368,12 @@ header {
 }
 
 .contact-wrapper h3 {
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 10px;
     text-align: center;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.1em;
     text-shadow: 0px 1px 1px black;
 }
 
