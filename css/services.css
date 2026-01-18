@@ -11,7 +11,7 @@
   }
   
   .slider {
-    width: 80vw;
+    width: 73vw;
     text-align: center;
     overflow: hidden;
     font-family: 'Ropa Sans', sans-serif;
@@ -51,7 +51,7 @@
   .slides > div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 80vw;
+    width: 73vw;
     height: 420px;
     margin-right: 50px;
     border-radius: 10px;

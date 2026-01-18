@@ -116,7 +116,11 @@
         width: 90%;
     }
     .slider {
+        width: 81vw;
         margin-left: -10px;
+    }
+    .slides > div {
+        width: 81vw;
     }
 }
 
