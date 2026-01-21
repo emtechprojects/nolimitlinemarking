@@ -12,16 +12,24 @@
   overflow: hidden;
   font-family: 'Ropa Sans', sans-serif;
   margin-bottom: 2em;
+  position: relative;
+}
+.finger {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 100px;
+  left: 90%;
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 80%;
 }
 
 .slides {
   display: flex;
-
+  z-index: 5;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-
-
-
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 
@@ -35,13 +43,14 @@
 }
 
 .slides::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
 }
 
 .slides::-webkit-scrollbar-thumb {
   background: black;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .slides::-webkit-scrollbar-track {

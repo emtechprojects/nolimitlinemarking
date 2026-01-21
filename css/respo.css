@@ -31,6 +31,10 @@
     .form-gr-inner-after::after {
         bottom: 42%;
     }
+    .finger {
+        top: 140px;
+        left: 80%;
+      }
 }
 
 @media screen and (max-width:500px) {
@@ -122,6 +126,10 @@
     .slides > div {
         width: 81vw;
     }
+    .finger {
+        top: 140px;
+        left: 80%;
+      }
 }
 
 @media screen and (max-width:412px) {
