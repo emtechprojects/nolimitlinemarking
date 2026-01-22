@@ -502,5 +502,32 @@ footer {
     font-size: large;
 }
 
+.partners {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project-group {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-logo {
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.project-group p {
+    width: 90%;
+    /* border: 1px solid yellow; */
+}
+
+
+
 /* FOOTER */
 /* FOOTER */

@@ -31,10 +31,11 @@
     .form-gr-inner-after::after {
         bottom: 42%;
     }
+
     .finger {
         top: 140px;
         left: 80%;
-      }
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -116,26 +117,41 @@
         flex-direction: column;
         gap: 15px;
     }
+
     .services-content {
         width: 90%;
     }
+
     .slider {
         width: 81vw;
         margin-left: -10px;
     }
-    .slides > div {
+
+    .slides>div {
         width: 81vw;
     }
+
     .finger {
         top: 140px;
         left: 80%;
-      }
+    }
+
+    .project-group {
+        width: 50%;
+        margin: auto;
+        gap: 10px;
+    }
+
+    .project-group p {
+        text-align: left;
+    }
 }
 
 @media screen and (max-width:412px) {
     .parallax-inner {
         margin-top: 1em;
     }
+
     .contact {
         width: 90%;
     }

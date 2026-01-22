@@ -96,7 +96,7 @@
   color: white;
 }
 
-img {
+.slide-img {
   object-fit: cover;
   position: absolute;
   top: 0;
