@@ -164,10 +164,6 @@ header {
     color: rgb(63, 63, 76);
 }
 
-.about-inner {}
-
-.parallax-wrapper {}
-
 .parallax {
     display: flex;
     flex-direction: column;
@@ -298,7 +294,7 @@ header {
     font-weight: 750;
     /* color: rgb(41, 90, 136); */
     color: white;
-    text-shadow: 0px 0px 1px black;
+    text-shadow: 0px 0px 4px black;
     letter-spacing: 1px;
     position: absolute;
     top: 32%;
