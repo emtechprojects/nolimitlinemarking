@@ -46,11 +46,13 @@ body {
     z-index: 100;
     /* animation: slide 3500ms 0s ease-in 1 forwards;  UNCOMMENT FOR ANIMATION*/
 }
+
 @keyframes slide {
     90% {
         transform: translateY(0);
         opacity: 100%;
     }
+
     100% {
         opacity: 0;
         transform: translateY(-200px);
@@ -58,6 +60,7 @@ body {
         z-index: 0;
     }
 }
+
 .intro-img {
     margin-top: -400px;
 }
@@ -258,13 +261,14 @@ header {
 
 .contact-now {
     font-size: 0.7em;
-    padding:1px 1em;
-    background:rgb(182, 182, 182);
+    padding: 1px 1em;
+    background: rgb(182, 182, 182);
     color: white;
     border-radius: 5px;
     text-shadow: 1px 1px 2px black;
     transition: background 600ms;
 }
+
 .contact-now:hover {
     background: rgb(149, 149, 149);
 }
@@ -300,6 +304,7 @@ header {
     top: 32%;
     left: 0;
 }
+
 .card-body p {
     font-size: large;
 }
@@ -309,6 +314,113 @@ header {
 
 /* SERVICES */
 
+.slider {
+    width: 73vw;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Ropa Sans', sans-serif;
+    margin-bottom: 2em;
+    position: relative;
+    border-radius: 20px;
+}
+
+.slider:hover .slides {
+    width: 100%;
+    overflow-y: hidden;
+    touch-action: pan-x;
+    animation: none;
+    animation-play-state: paused;
+}
+
+.finger {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 370px !important;
+    left: 5%;
+    z-index: 1;
+    border-radius: 50%;
+    opacity: 80%;
+}
+
+.slides {
+    width: 300%;
+    margin: auto;
+    display: flex;
+    z-index: 5;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    border: 3px double grey;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px silver;
+    touch-action: pan-x;
+    animation: preview 7s ease-in 0s 1 normal forwards;
+}
+
+.slides:active {
+    touch-action: pan-x;
+    animation: none;
+    animation-play-state: paused;
+}
+
+@keyframes preview {
+    0% {
+        transform: translateX(0);
+    }
+
+    98% {
+        transform: translateX(-65%);
+    }
+}
+
+.slides::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 73vw;
+    height: 420px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transition: transform 0.5s;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.slides>div:hover {
+    transform: scale(1.1);
+}
+
+.slide-img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 .services {
@@ -331,14 +443,17 @@ header {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
 .services-content ul {
     width: 94%;
     font-size: large !important;
 }
+
 .services-content p {
     font-size: larger;
     margin-bottom: 20px;
 }
+
 .tikvids {
     margin: 3em 0;
     display: flex;
@@ -348,6 +463,7 @@ header {
     flex-wrap: wrap;
     gap: 3em;
 }
+
 .tikvid {
     width: 90%;
     max-width: 300px;
@@ -514,6 +630,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
 .project-logo {
     width: 35px;
     height: 35px;
@@ -521,6 +638,7 @@ footer {
     border-radius: 50%;
     border: 1px solid black;
 }
+
 .project-group p {
     width: 90%;
     /* border: 1px solid yellow; */
