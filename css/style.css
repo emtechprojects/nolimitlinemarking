@@ -314,7 +314,7 @@ header {
 
 /* SERVICES */
 
-.slider {
+.carousel-slider {
     width: 73vw;
     margin: auto;
     text-align: center;
@@ -325,7 +325,7 @@ header {
     border-radius: 20px;
 }
 
-.slider:hover .slides {
+.carousel-slider:hover .carousel-slides {
     width: 100%;
     overflow-y: hidden;
     touch-action: pan-x;
@@ -333,7 +333,7 @@ header {
     animation-play-state: paused;
 }
 
-.finger {
+.carousel-finger {
     position: absolute;
     width: 60px;
     height: 60px;
@@ -344,7 +344,7 @@ header {
     opacity: 80%;
 }
 
-.slides {
+.carousel-slides {
     width: 300%;
     margin: auto;
     display: flex;
@@ -360,7 +360,7 @@ header {
     animation: preview 7s ease-in 0s 1 normal forwards;
 }
 
-.slides:active {
+.carousel-slides:active {
     touch-action: pan-x;
     animation: none;
     animation-play-state: paused;
@@ -376,22 +376,22 @@ header {
     }
 }
 
-.slides::-webkit-scrollbar {
+.carousel-slides::-webkit-scrollbar {
     width: 15px;
     height: 15px;
 }
 
-.slides::-webkit-scrollbar-thumb {
+.carousel-slides::-webkit-scrollbar-thumb {
     background: black;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.slides::-webkit-scrollbar-track {
+.carousel-slides::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.slides>div {
+.carousel-slides>div {
     scroll-snap-align: start;
     flex-shrink: 0;
     width: 73vw;
@@ -402,18 +402,17 @@ header {
     transform-origin: center center;
     transition: transform 0.5s;
     position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 100px;
 }
 
-.slides>div:hover {
+.carousel-slides>div:hover {
     transform: scale(1.1);
 }
 
-.slide-img {
+.carousel-slide-img {
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -650,8 +649,8 @@ footer {
 /* FOOTER */
 
 @media screen and (max-width:501px) {
-    .slider {
+    .carousel-slider {
         width: 81vw;
-        margin-left: 10% !important;
+        /* margin-left: 10% !important; */
     }
 }
